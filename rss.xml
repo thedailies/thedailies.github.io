@@ -2,7 +2,7 @@
 <rss version="2.0">
 <channel>
 <title>The Dailies</title>
-<link>"posts/http://www.thedailies.org/"</link>
+<link>"http://www.thedailies.org/"</link>
 <description>Brief nuggets of interest compiled every weekday in New Jersey and Pennsylvania.</description>
 
 
