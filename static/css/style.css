@@ -156,6 +156,18 @@ p.def, p.comment {
 	text-align: left; 
 	text-transform: none; 
 }
+p.def a, p.comment a {
+	font-family: 'Roboto Slab Light'; 
+	font-size: 1em; 
+	line-height: 1.4em; 
+	color: #085DAD; 
+	text-align: left; 
+	text-transform: none; 
+	text-decoration: none;
+}
+p.def a:hover, p.comment a:hover {
+	color: #21BEDE;	
+}
 img {
 	opacity: 1.0;
 	filter: alpha(opacity=100); /* For IE8 and earlier */	
