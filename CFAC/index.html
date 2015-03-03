@@ -2,20 +2,37 @@
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <script src="//use.typekit.net/ufk0xud.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-  <title></title>
+  	<script src="//use.typekit.net/ufk0xud.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+    <style type="text/css">
+		h2 {
+			text-align: center;
+			font-size: 50px;
+			text-transform: uppercase;
+		}
+		h4 {
+			text-align: center;
+			font-size: 24px;
+			text-transform: uppercase;
+		}
+		button {
+			font-size: 14px;
+			text-transform: uppercase;
+			align: center;
+		}
+    </style>
+	<title></title>
 </head>
 <body ng-app="app">
 
 <div ng-controller="randomizer">
-  <div><h4>Do you like</h4></div>
+  <div><h4>Fred likes</h4></div>
   <div><h2>{{likes}}</h2></div>
-  <div><h4>or do you like</h4></div>
+  <div><h4>but he doesn't like</h4></div>
   <div><h2>{{dislikes}}</h2></div>
 
-  <button>Try own</button>
-  <button ng-click="refresh()">Refresh</button>
+  <button>Try your own</button>
+  <button ng-click="refresh()">What else does Fred like?</button>
 
 </div>
 
