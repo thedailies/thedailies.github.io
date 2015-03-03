@@ -1,0 +1,273 @@
+{ "likes": "coffee",
+"dislikes": “tea" }
+{
+"likes": "cars", 
+"dislikes": "trucks"
+}
+{
+"likes": "love", 
+"dislikes": "heart"
+}
+{
+"likes": "arms", 
+"dislikes": "wrists"
+}
+{
+"likes": "fingers and hands",
+"dislikes": "feet or toes"
+}
+{
+"likes": "apparel",
+"dislikes": "clothes"
+}
+{
+"likes": "socks and shoes",
+"dislikes": "shirts or pants"
+}
+{
+"likes": "dresses",
+"dislikes": "skirts"
+}
+{"likes": "shoes",
+"dislikes": "boots"
+}
+{
+"likes": "Hondas",
+"dislikes": "Toyotas"
+}
+{
+"likes": "BMW",
+"dislikes": "Aston Martin"
+}
+{
+"likes": "James Bond",
+"dislikes": "Ernst Stavro Blofeld"
+}
+{
+"likes": "cocoa",
+"dislikes": "chocolate"
+}
+{
+"likes": "dining rooms",
+"dislikes": "kitchens"
+}
+{
+"likes": "food",
+"dislikes": "eating"
+}
+{
+"likes": "chairs",
+"dislikes": "seats"
+}
+{
+"likes": "sickness",
+"dislikes": "health"
+}
+{
+"likes": "darkness",
+"dislikes": "light"
+}
+{
+"likes": "Republicans",
+"dislikes": "Democrats"
+}
+{
+"likes": "democracy",
+"dislikes": "elections"
+}
+{
+"likes": "rulers",
+"dislikes": "presidents"
+}
+{
+"likes": "governors",
+"dislikes": "senators"
+}
+{
+"likes": "newspapers",
+"dislikes": "the internet"
+}
+{
+"likes": "candy",
+"dislikes": "sweets"
+}
+{
+"likes": "chairs",
+"dislikes": "tables"
+}
+{
+"likes": "fires",
+"dislikes": "heat"
+}
+{
+"likes": "cold", 
+"dislikes": "winter"
+}
+{
+"likes": "fall", 
+"dislikes": "autumn"
+}
+{
+"likes": "Eli Manning",
+"dislikes": "Peyton Manning"
+}
+{
+"likes": "the Eagles",
+"dislikes": "the Steelers"
+}
+{
+"likes": "America",
+"dislikes": "the United States"
+}
+{
+"likes": "Bill Belichick",
+"dislikes": "Tom Brady"}
+{
+"likes": "Memorial Day", 
+"dislikes": "July 4th"
+}
+{
+"likes": "holidays", 
+"dislikes": "Thanksgiving or Christmas"
+}
+{
+"likes": "soccer", 
+"dislikes": "football"
+}
+{
+"likes": "Philadelphia", 
+"dislikes": "Pittsburgh"
+}
+{
+"likes": "dairy", 
+"dislikes": "yogurt"
+}
+{
+"likes": "porridge", 
+"dislikes": "oatmeal"
+}
+{
+"likes": "dogs", 
+"dislikes": "cats"
+}
+{
+"likes": "lakes", 
+"dislikes": "water"
+}
+{
+"likes": "woods", 
+"dislikes": "trees"
+}
+{
+"likes": "freedom", 
+"dislikes": "liberty"
+}
+{
+"likes": "lies", 
+"dislikes": "truth"
+}
+{
+"likes": "mammals", 
+"dislikes": "reptiles"
+}
+{
+"likes": "sugar", 
+"dislikes": "toffee"
+}
+{
+"likes": "frames", 
+"dislikes": "art"
+}
+{
+"likes": "pencil", 
+"dislikes": "painting"
+}
+{
+"likes": "ink", 
+"dislikes": "tattoos"
+}
+{
+"likes": "bread", 
+"dislikes": "toast"
+}
+{
+"likes": "love", 
+"dislikes": "hate"
+}
+{
+"likes": "vanilla", 
+"dislikes": "chocolate"
+}
+{
+"likes": "ships", 
+"dislikes": "boats"
+}
+{
+"likes": "noodles", 
+"dislikes": "pasta"
+}
+{
+"likes": "corn", 
+"dislikes": "potatoes"
+}
+{
+"likes": "spinach", 
+"dislikes": "artichokes"
+}
+{
+"likes": "venison", 
+"dislikes": "turkey"
+}
+{
+"likes": "duck",
+"dislikes": "pheasant"
+}
+{
+"likes": "pepper", 
+"dislikes": "salt"
+}
+{
+"likes": "puzzles", 
+"dislikes": "games"
+}
+{
+"likes": "books", 
+"dislikes": "movies"
+}
+{
+"likes": "running and jumping", 
+"dislikes": "basketball"
+}
+{
+"likes": "guns", 
+"dislikes": "shooting"
+}
+{
+"likes": "Superman", 
+"dislikes": "Batman"
+}
+{
+"likes": "Iron Man and Hulk", 
+"dislikes": "Captain America and Thor"
+}
+{
+"likes": "the Joker",
+"dislikes": "Batman"
+}
+{
+"likes": "celebrations", 
+"dislikes": "traditions"
+}
+{
+"likes": "mazes", 
+"dislikes": "exits"
+}
+{
+"likes": "landings", 
+"dislikes": "takeoffs"
+}
+{
+"likes": "planes", 
+"dislikes": "parachutes"
+}
+
