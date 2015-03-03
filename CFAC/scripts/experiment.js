@@ -31,8 +31,8 @@
 
   app.controller('randomizer', ['$scope', 'dataService', function($scope, dataService) {
 
-    $scope.likes = "thing one";
-    $scope.dislikes = "thing";
+    $scope.likes = "coffee";
+    $scope.dislikes = "tea";
 
     $scope.refresh = function() {
       var item = dataService.fetch();
