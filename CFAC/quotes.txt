@@ -1,0 +1,7 @@
+First quote
+Second quote
+Only one quote per line please!
+A quote with <b>HTML</b> code. <i>Italic anyone?</i>
+You can add <a href="http://www.phpjunkyard.com">links</a> to quotes!
+A simple quote
+Just some random text...
