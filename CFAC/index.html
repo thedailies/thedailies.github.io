@@ -9,16 +9,29 @@
 			text-align: center;
 			font-size: 70px;
 			text-transform: uppercase;
+			line-height: 70px;
+			margin: 0 0 30px 0;
 		}
 		h4 {
 			text-align: center;
-			font-size: 20px;
+			font-size: 26px;
 			text-transform: uppercase;
+			line-height: 26px;
+			margin: 0 0 10px 0;
 		}
 		button {
 			font-size: 14px;
 			text-transform: uppercase;
+			border: 3px solid #000;
+			background: #fff;
+		}
+		button:hover {
+			background: #000;
+			color: #fff;
+		}
+		.buttons {
 			align: center;
+			margin: 10px 0;
 		}
     </style>
 	<title></title>
@@ -31,8 +44,10 @@
   <div><h4>but he doesn't like</h4></div>
   <div><h2>{{dislikes}}</h2></div>
 
+<div id="buttons">
   <button>Try your own</button>
   <button ng-click="refresh()">What else does Fred like?</button>
+  </div>
 
 </div>
 
