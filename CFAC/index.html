@@ -41,19 +41,19 @@
     <div ng-show="hasMessage" class="message">
       <div ng-if="isALike && isADislike">
         <span class="zicon-check"></span>
-        Yes, Fred likes {{fredLikes}} but not {{fredDislikes}}.
+        <h4>Yes, Fred likes {{fredLikes}} but not {{fredDislikes}}</h4>.
       </div>
       <div ng-if="isALike && !isADislike">
         <span class="zicon-nope"></span>
-        No, Fred likes both of those things.
+        <h4>No, Fred likes both of those things</h4>.
       </div>
       <div ng-if="!isALike && isADislike">
         <span class="zicon-nope"></span>
-        No, Fred likes {{fredDislikes}} but no {{fredLikes}}.
+        <h4>No, Fred likes {{fredDislikes}} but no {{fredLikes}}</h4>.
       </div>
       <div ng-if="!isALike && !isADislike">
         <span class="zicon-nope"></span>
-        No, Fred doesn't like either of those things.
+        <h4>No, Fred doesn't like either of those things</h4>.
       </div>
     </div>
 

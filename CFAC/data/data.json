@@ -116,8 +116,8 @@
     "dislikes": "Peyton Manning"
   },
   {
-    "likes": "the Eagles",
-    "dislikes": "the Steelers"
+    "likes": "Eagles",
+    "dislikes": "Steelers"
   },
   {
     "likes": "America",
@@ -236,8 +236,8 @@
     "dislikes": "games"
   },
   {
-    "likes": "books",
-    "dislikes": "movies"
+    "likes": "books and movies",
+    "dislikes": "TV"
   },
   {
     "likes": "running and jumping",
@@ -256,12 +256,8 @@
     "dislikes": "Captain America and Thor"
   },
   {
-    "likes": "the Joker",
+    "likes": "Joker",
     "dislikes": "Batman"
-  },
-  {
-    "likes": "celebrations",
-    "dislikes": "traditions"
   },
   {
     "likes": "mazes",
@@ -275,4 +271,213 @@
     "likes": "planes",
     "dislikes": "parachutes"
   }
+  {
+    "likes": "Malvern",
+    "dislikes": "East Whiteland Township"
+  }
+  {
+    "likes": "Cereal",
+    "dislikes": "Oatmeal"
+  }
+  {
+    "likes": "Ireland",
+    "dislikes": "Scotland"
+  }
+  {
+    "likes": "",
+    "dislikes": ""
+  }
+  {
+    "likes": "Bach",
+    "dislikes": "Beethoven"
+  }
+  {
+    "likes": "Chopin",
+    "dislikes": "Mozart"
+  }
+  {
+    "likes": "Piano",
+    "dislikes": "Guitar"
+  }
+  {
+    "likes": "clocks",
+    "dislikes": "time"
+  }
+  {
+    "likes": "paper",
+    "dislikes": "notebook"
+  }
+  {
+    "likes": "Drake",
+    "dislikes": "Kanye West"
+  }
+  {
+    "likes": "Joffrey",
+    "dislikes": "Tyrion"
+  }
+  {
+    "likes": "Jeopardy!",
+    "dislikes": "Alex Trebek"
+  }
+  {
+    "likes": "adverbs",
+    "dislikes": "adjectives"
+  }
+  {
+    "likes": "words",
+    "dislikes": "sentences"
+  }
+  {
+    "likes": "second floors",
+    "dislikes": "elevators, escalators, and stairs"
+  }
+  {
+    "likes": "dressers",
+    "dislikes": "nightstands"
+  }
+  {
+    "likes": "bedrooms",
+    "dislikes": "bathrooms"
+  }
+  {
+    "likes": "Germany",
+    "dislikes": "Otto van Bismarck"
+  }
+  {
+    "likes": "Col. Klink",
+    "dislikes": "Sgt. Schultz"
+  }
+  {
+    "likes": "LeBron James",
+    "dislikes": "Kevin Durant"
+  }
+  {
+    "likes": "Karl Malone",
+    "dislikes": "John Stockton"
+  }
+  {
+    "likes": "Galahad",
+    "dislikes": "Lancelot"
+  }
+  {
+    "likes": "being warm and dry",
+    "dislikes": "coats, jackets, and sweatshirts"
+  }
+  {
+    "likes": "suburbs",
+    "dislikes": "towns and cities"
+  }
+  {
+    "likes": "Shakespeare",
+    "dislikes": "Hamlet, Romeo and Juliet, Macbeth, and Othello"
+  }
+  {
+    "likes": "Rome",
+    "dislikes": "Italy"
+  }
+  {
+    "likes": "McNabb",
+    "dislikes": "T.O."
+  }
+  {
+    "likes": "friends",
+    "dislikes": "relationships"
+  }
+  {
+    "likes": "driving",
+    "dislikes": "speed limits, stop signs, and construction"
+  }
+  {
+    "likes": "A Song of Ice and Fire",
+    "dislikes": "Game of Thrones"
+  }
+  {
+    "likes": "Chargers, Challengers, Chevelles, and Barracudas",
+    "dislikes": "Mustangs, Trans Ams, and GTOs"
+  }
+  {
+    "likes": "John Cougar Mellencamp",
+    "dislikes": "Bruce Springsteen"
+  }
+  {
+    "likes": "Led Zeppelin",
+    "dislikes": "Robert Plant"
+  }
+  {
+    "likes": "Journey",
+    "dislikes": "Don't Stop Believing"
+  }
+  {
+    "likes": "housecleaning",
+    "dislikes": "dusting"
+  }
+  {
+    "likes": "lunch and dinner",
+    "dislikes": "breakfast"
+  }
+  {
+    "likes": "Homer, Marge, Lisa, and Maggie",
+    "dislikes": "Bart"
+  }
+  {
+    "likes": "Pam Beesley",
+    "dislikes": "Jim Halpert"
+  }
+  {
+    "likes": "J.J. Abrams",
+    "dislikes": "What he did to Star Trek. Unforgivable."
+  }
+  {
+    "likes": "Snoopy",
+    "dislikes": "Woodstock"
+  }
+  {
+    "likes": "Jimi Hendrix",
+    "dislikes": "The Jimi Hendrix Experience"
+  }
+  {
+    "likes": "Duane and Gregg Allman",
+    "dislikes": "Allman Brothers Band"
+  }
+  {
+    "likes": "Derek Zoolander",
+    "dislikes": "Jacobim Mugatu"
+  }
+  {
+    "likes": "Eleven",
+    "dislikes": "Ten"
+  }
+  {
+    "likes": "Fezzik",
+    "dislikes": "Hello. My name is Inigo Montoya. You killed my father. Prepare to die."
+  }
+  {
+    "likes": "roses",
+    "dislikes": "tulips"
+  }
+  {
+    "likes": "peonies",
+    "dislikes": "chrysanthemums"
+  }
+  {
+    "likes": "Wall-E",
+    "dislikes": "Toy Story, Toy Story 2, Toy Story 3, The Incredibles, and Ratatouille"
+  }
+  {
+    "likes": "glasses",
+    "dislikes": "contacts"
+  }
+  {
+    "likes": "ales",
+    "dislikes": "porters and stouts"
+  }
+  {
+    "likes": "burgers",
+    "dislikes": "steaks"
+  }
+  {
+    "likes": "",
+    "dislikes": ""
+  }
+
 ]
