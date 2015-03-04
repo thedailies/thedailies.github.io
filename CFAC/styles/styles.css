@@ -62,9 +62,10 @@ button:hover {
 }
 
 .buttons {
+    display: block;
     margin: 0 auto;
-    width: 421px;
     padding: 20px 0;
+    max-width: 421px;
 }
 
 .modal.ng-hide-add, .modal.ng-hide-remove {
@@ -93,6 +94,10 @@ button:hover {
     bottom: 0;
     right: 0;
     opacity: 1;
+}
+
+.modal .buttons {
+    width: 124px;
 }
 
 .modal.ng-hide {
