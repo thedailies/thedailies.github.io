@@ -232,8 +232,8 @@
     "dislikes": "salt"
   },
   {
-    "likes": "puzzles",
-    "dislikes": "games"
+    "likes": "black",
+    "dislikes": "white"
   },
   {
     "likes": "books and movies",
@@ -471,5 +471,24 @@
     "likes": "burgers",
     "dislikes": "steaks"
   }
-
+  {
+    "likes": "cans",
+    "dislikes": "bottles"
+  }
+  {
+    "likes": "snow",
+    "dislikes": "sleet"
+  } 
+  {
+    "likes": "news",
+    "dislikes": "weather"
+  }
+  {
+    "likes": "games",
+    "dislikes": "sports"
+  }
+  {
+    "likes": "working out",
+    "dislikes": "fitness"
+  }
 ]
