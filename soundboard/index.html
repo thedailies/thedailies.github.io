@@ -11,7 +11,17 @@
 		<!-- CSS -->
 		<style type="text/css">
 			<!--
-			div { vertical-align: top; max-width: 640px; text-align: center; }
+			div { 
+				display: -webkit-box;
+  				display: -moz-box;
+  				display: -ms-flexbox;
+				display: -webkit-flex;
+  				display: flex; 
+  				-webkit-flex-flow: row wrap; 
+  				justify-content: space-around; 
+  				max-width: 640px; 
+  				
+  				}
 			body { -webkit-text-size-adjust: 100%; }
 			p { margin-bottom: 10px; }
 			.btn { 
@@ -23,14 +33,18 @@
 				background: -ms-linear-gradient(top, #72cdf4 0%,#00aaff 100%); /* IE10+ */
 				background: linear-gradient(to bottom, #72cdf4 0%,#00aaff 100%); /* W3C */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72cdf4', endColorstr='#00aaff',GradientType=0 ); /* IE6-9 */ 
-				width: 4em;
-				height: 4em;
+				
+				width: 8em;
+				height: 8em;
 				margin: 0.5em;
+				
 				border-radius: 0.25em;
 				color: #333333;
-				font-size: 1.25em;
-				font-family: 'Frutiger', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-				line-height: 1em;
+				font-size: 2em;
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				line-height: 1.5em;
+				text-align: center;
+				
 				}
 			.btn:hover { background: #00aaff; }
 			.btn:active { background: white; border: 1px solid #00aaff; }
