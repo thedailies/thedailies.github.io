@@ -11,6 +11,20 @@
 		<!-- CSS -->
 		<style type="text/css">
 			<!--
+			.header {
+				margin: auto;
+				display: block;
+			}
+			h1 {
+				font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+				font-size: 3em;
+				color: #00aaff;
+				text-align: center;
+				}
+			.container { 
+				margin: auto; 
+				display: flex; 
+				}
 			.flexbox { 
 				display: -webkit-box;
   				display: -moz-box;
@@ -62,49 +76,55 @@
 		<audio id="sound8" src="sounds/putitdown.mp3"></audio>
 		<audio id="sound9" src="sounds/monkey.mp3"></audio>
 
-		<div class="flexbox">
-			<button class="btn" onclick="document.getElementById('sound1').play()">Choop</button>
-			<button class="btn" onclick="document.getElementById('sound2').play()">Oink</button>
-			<button class="btn" onclick="document.getElementById('sound3').play()">Do your job</button>
-			<button class="btn" onclick="document.getElementById('sound4').play()">Ha!</button>
-			<button class="btn" onclick="document.getElementById('sound5').play()">No</button>
-			<button class="btn" onclick="document.getElementById('sound6').play()">What?</button>
-			<button class="btn" onclick="document.getElementById('sound7').play()">Chick-Fil-A time</button>
-			<button class="btn" onclick="document.getElementById('sound8').play()">Put it down</button>
-			<button class="btn" onclick="document.getElementById('sound9').play()">Monkey</button>
+		<div class="header">
+			<h1>Zonoff Soundboard</h1>
 		</div>
-		<div class="flexbox">
-			<button class="btn" onclick="document.getElementById('sound#').play()">U nuts bro?</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Balog laugh</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">All right</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Ouch!</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">IDK</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Ping pong</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Balloon</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Whatever</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Ahh</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Demo Dance</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">BKO</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Todd</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Sanat</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Got passed the Bear</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Conor</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Big Nerf Gun pump</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">PVC pipe blast</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Nerf dart on window</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Super Duper!</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Yaaay!</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Why is the beer cold?</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Jon Adams laugh</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">You people are like animals</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Half day, huh?</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Lavanya</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Yeah, YEAH</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Ahh! What the hell?</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Greg</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Cheetos</button>
-			<button class="btn" onclick="document.getElementById('sound#').play()">Yo Rita!</button>
+		<div class="containter">
+			<div class="flexbox">
+				<button class="btn" onclick="document.getElementById('sound1').play()">Choop</button>
+				<button class="btn" onclick="document.getElementById('sound2').play()">Oink</button>
+				<button class="btn" onclick="document.getElementById('sound3').play()">Do your job</button>
+				<button class="btn" onclick="document.getElementById('sound4').play()">Ha!</button>
+				<button class="btn" onclick="document.getElementById('sound5').play()">No</button>
+				<button class="btn" onclick="document.getElementById('sound6').play()">What?</button>
+				<button class="btn" onclick="document.getElementById('sound7').play()">Chick-Fil-A time</button>
+				<button class="btn" onclick="document.getElementById('sound8').play()">Put it down</button>
+				<button class="btn" onclick="document.getElementById('sound9').play()">Monkey</button>
+			</div>
 		</div>
-			
+		<div class="container">
+			<div class="flexbox">
+				<button class="btn" onclick="document.getElementById('sound#').play()">U nuts bro?</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Balog laugh</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">All right</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Ouch!</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">IDK</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Ping pong</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Balloon</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Whatever</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Ahh</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Demo Dance</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">BKO</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Todd</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Sanat</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Got passed the Bear</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Conor</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Big Nerf Gun pump</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">PVC pipe blast</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Nerf dart on window</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Super Duper!</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Yaaay!</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Why is the beer cold?</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Jon Adams laugh</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">You people are like animals</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Half day, huh?</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Lavanya</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Yeah, YEAH</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Ahh! What the hell?</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Greg</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Cheetos</button>
+				<button class="btn" onclick="document.getElementById('sound#').play()">Yo Rita!</button>
+			</div>
+		</div>			
 	</body>
 </html>
