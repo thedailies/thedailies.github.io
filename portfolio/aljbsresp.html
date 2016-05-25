@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200italic|Merriweather:400,700' rel='stylesheet' type='text/css'>
+		<title>Ty Clark - ALJBS Responsive Schedule</title>
+		<style type="text/css">
+			@media only screen and (max-device-width: 480px), only screen and (device-width: 768px), only screen and (device-width: 640px), only screen and (-webkit-min-device-pixel-ratio: 2) {
+				body {
+					-webkit-text-size-adjust:120%;
+				}
+
+				#wrapper {
+					width: 100%;
+				}
+
+				#datecol {
+					display: none;
+				}
+	
+				#schedule {
+					width: 100%;
+				}
+	
+				#sidenav {
+					display: none;
+				}
+	
+				#topnav {
+					width: 90%;
+					margin-left: 5%;
+					margin-bottom: 2em;
+				}
+
+				#navph ul {
+					list-style-type: none;
+					margin-left: auto;
+					margin-right: auto;
+				}	
+	
+				#navph li {
+					display: inline-block;
+					padding: 0.4em 0.6em; 
+				}
+				
+				#navph li~li {
+					border-left: 1px solid #535353;
+				}
+	
+				#navph li a {
+					text-decoration: none;
+					color: #efaf19;
+					font-family: 'Merriweather', serif;
+					font-weight: 200;
+				}	
+				
+			}
+
+
+			/** Smartphone sizes. One column, element by element. */
+			@media only screen and (max-width: 767px)  {
+
+				#wrapper {
+					width: 100%;
+				}
+
+				#datecol {
+					display: none;
+				}
+	
+				#schedule {
+					width: 100%;
+				}
+	
+				#sidenav {
+					display: none;
+				}
+	
+				#topnav {
+					width: 90%;
+					margin-left: auto;
+					margin-right: auto;
+					margin-bottom: 2em;
+				}
+
+				#navph ul {
+					list-style-type: none;
+					margin-left: auto;
+					margin-right: auto;
+				}	
+	
+				#navph li {
+					display: inline-block;
+					padding: 0.4em 0.6em; 
+				}
+				
+				#navph li~li {
+					border-left: 1px solid #535353;
+				}
+	
+				#navph li a {
+					text-decoration: none;
+					color: #efaf19;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 200;
+				}	
+
+			}
+
+			/** Two columns, large schedule + small sidebar nav. */
+			@media only screen and (max-width: 1050px) and (min-width: 768px)  {
+
+				#wrapper {
+					width: 100%;
+					margin: 0 auto; 
+					overflow: auto;
+				}
+
+				#datecol {
+					display: none;	
+				}
+	
+				#schedule {
+					float: left;
+					width: 82.3%;
+					padding: 1em;
+				}
+	
+				#sidenav {
+					float: left;
+					width: 12.7%;
+					padding-top: 4.5em;
+					border-right: 1px dotted #e7e7e7;
+				}
+	
+				#topnav {
+					display: none;
+				}
+				
+				#navph {
+					display: none;
+				}
+
+			}
+
+			/** Three columns, small sidebar date + large schedule + small sidebar nav. */
+			@media only screen and (min-width: 1051px)  {
+
+				#wrapper {
+					width: 95%;
+					margin: 0 auto;
+					overflow: auto;
+				}
+	
+				#datecol {
+					float: left;
+					width: 12%;
+					text-align: left;
+					padding: 3.5em 0.7em;
+				}
+	
+				#schedule {
+					float: left;
+					width: 70%;
+					padding: 1em;
+				}
+	
+				#sidenav {
+					float: left;
+					width: 10%;
+					padding-top: 4.5em;
+					padding-bottom: 4.5em;
+					border-right: 1px dotted #e7e7e7;
+				}
+
+				#topnav {
+					display: none;
+				}
+				
+				#navph {
+					display: none;
+				}
+
+			} 
+
+				h1 {
+					font-family: 'Merriweather', serif;
+					font-weight: 700; 
+					text-align: center; 
+				}
+
+				h2 {
+					font-family: 'Merriweather', serif;
+					font-weight: 700; 
+					text-align: center; 
+				}
+
+				h3 {
+					font-family: 'Merriweather', serif;
+					font-weight: 400; 
+				}
+
+				p {
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 200; 
+					line-height: 120%; 
+					margin-bottom: 0.2em; 
+				}
+
+				strong {
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 400; 
+				}
+
+				p.strong {
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 400; 
+				}
+
+				p.em {
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 200; 
+					font-style: italic; 
+				}
+
+				/** Start, End, Event, Location, Deadlines */
+				p.labels {
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 200;
+					font-style: italic;
+					color: #757575;
+					margin: 0; 
+				}		
+	
+				p a {
+					text-decoration: none;
+					color: #535353;
+					border-bottom: 1px dotted #535353;
+				}
+	
+				p a:hover {
+					text-decoration: none;
+					border-bottom: 1px dotted #efaf19;
+					color: #efaf19;
+					-webkit-transition: 0.2s background-color ease-in-out;
+					-moz-transition: 0.2s background-color ease-in-out;
+					-o-transition: 0.2s background-color ease-in-out;
+					}
+
+				ul, ol {
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 200;
+					margin: 0;
+					padding-left: 2em;
+					padding-top: 0.5em;
+				}
+
+				#sidenav ul {
+					list-style-type: none;
+					padding-left: 0.4em;
+					margin: 0;
+				}
+	
+
+				#sidenav a {
+					padding: 0.2em 0em 0.2em 0.4em;
+					text-decoration: none;
+					color: #535353;
+					font-family: 'Merriweather'; serif;
+					font-weight: 400;
+				}	
+
+	
+				#sidenav li a {
+					display: block;
+					padding: 0.2em 0em 0.2em 0.4em;
+					text-decoration: none;
+					color: #535353;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-weight: 200;
+				}	
+
+				#sidenav a:hover {
+					-webkit-transition: 0.2s color ease-in-out;
+					-moz-transition: 0.2s color ease-in-out;
+					-o-transition: 0.2s color ease-in-out;
+					color: #efaf19;
+				}	
+				
+				#bottomnav ul {
+					list-style-type: none;
+					margin-left: auto;
+					margin-right: auto;
+				}	
+	
+				#bottomnav li {
+					display: inline-block;
+					padding: 0.4em 0.6em; 
+				}
+				
+				#bottomnav li~li {
+					border-left: 1px solid #535353;
+				}
+	
+				#bottomnav li a {
+					text-decoration: none;
+					color: #535353;
+					font-family: 'Source Sans Pro', sans-serif;
+					font-size: 0.8em;
+					font-weight: 200;
+				}
+				
+				#bottomnav a:hover {
+					-webkit-transition: 0.2s color ease-in-out;
+					-moz-transition: 0.2s color ease-in-out;
+					-o-transition: 0.2s color ease-in-out;
+					color: #efaf19;
+				}		
+
+				.day {
+					width: 100%;
+					float: left;
+					margin-bottom: 2em; 
+				}
+	
+				.event {
+					width: 100%;
+					float: left;
+					margin-bottom: 0.3em; 
+				}
+				
+				.topline {
+					width: 100%;
+					float: left;
+					margin-bottom: 0.4em;
+				}
+				
+				.start {
+					width: 10%;
+					float: left; 
+				}
+		
+				.end {
+					width: 10%;
+					float: left; 
+					margin-right: 2%;
+				}
+	
+				.title {
+					width: 48%;
+					margin-right: 1%; 
+					float: left;
+				}
+				
+				.titlelong {
+					width: 76%;
+					float: left;
+				}
+	
+				.location {
+					width: 27%; 
+					float: left; 
+				}
+	
+				.details {
+					clear: both;
+					width: 78%;
+					margin-left: 22%; 
+				}
+	
+				.deadlines {
+					width: 100%; 
+					float: left;
+					margin-bottom: 1em; 
+				}	
+	
+				.orientsmcol, .tripsmcol {
+					width: 10%;
+					float: left;
+				}
+				
+				.orientlgcol {
+					width: 40%;
+					float: left;
+				}
+				
+				.orientsmcol p, .orientlgcol p, .tripsmcol p, .triplgcol p, .examsmcol p, .examlgcol p {
+					line-height: 0.6em;
+				}
+								
+				.triplgcol {
+					width: 23%;
+					float: left;
+				}
+				
+				.examsmcol {
+					width: 20%;
+					float: left;
+				}
+				
+				.examlgcol {
+					width: 30%;
+					float: left;
+				}
+								
+				.datetime {
+					font-family: 'Merriweather';
+					line-height: 0.8em;
+					font-weight: 400;
+				}
+
+				.back {
+					width: 100%;
+					float: left;
+					border-bottom: 1px dashed #e7e7e7;
+					padding-bottom: 2em; 
+				}
+
+		</style>
+	</head>
+	<body>
+	
+		<!-- Begin wrapper -->
+		<div id="wrapper">
+
+			<h1 id="top">2013 Staff Schedule</h1>
+			
+			<!-- Navigation for smartphones -->
+			<div id="navph">
+				<ul>
+					<li><a href="#saturday">Saturday</a></li>	
+					<li><a href="#sunday">Sunday</a></li>	
+					<li><a href="#monday">Monday</a></li>	
+					<li><a href="#tuesday">Tuesday</a></li>	
+					<li><a href="#wednesday">Wednesday</a></li>	
+					<li><a href="#thursday">Thursday</a></li>	
+					<li><a href="#friday">Friday</a></li>
+					<li><a href="https://www.aljbs.org/cgi-bin/electionweb/aljbs_elections.cgi/forms">Elections</a></li>
+				</ul>
+		
+<!--			<form action="../">
+				<select id="topnav" onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+					<option value="" selected="selected">&nbsp;</option>
+					<option value="/">Schedule</option>
+					<option value="#saturday">-Saturday</option>
+					<option value="#sunday">-Sunday</option>
+					<option value="#monday">-Monday</option>
+					<option value="#tuesday">-Tuesday</option>
+					<option value="#wednesday">-Wednesday</option>
+					<option value="#thursday">-Thursday</option>
+					<option value="#friday">-Friday</option>
+				</select>
+			</form> -->
+			</div>
+			
+			<!-- Navigation for tablets/PCs in sidebar -->
+			
+			<div id="sidenav">
+			
+				<a href="#">Schedule</a>
+				<ul>
+					<li><a href="#saturday">Saturday</a></li>	
+					<li><a href="#sunday">Sunday</a></li>	
+					<li><a href="#monday">Monday</a></li>	
+					<li><a href="#tuesday">Tuesday</a></li>	
+					<li><a href="#wednesday">Wednesday</a></li>	
+					<li><a href="#thursday">Thursday</a></li>	
+					<li><a href="#friday">Friday</a></li>	
+				</ul>
+				<br />
+				<a href="#">Reference</a>
+				<ul>
+					<li><a href="#">EBO Guide</a></li>
+					<li><a href="https://www.aljbs.org/cgi-bin/electionweb/aljbs_elections.cgi/forms">Elections</a></li>
+					<li><a href="http://www.aljbs.org/php/daily/seminars.php">Seminars</a></li>
+				</ul>
+
+			</div> 
+
+			
+			<!-- The main schedule -->
+			<div id="schedule">
+			
+				<div class="day">
+				<h3 id="saturday">Saturday, June 15th</h3>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p class="labels">Start</p>
+							</div>
+							<div class="end">
+								<p class="labels">End</p>
+							</div>
+							<div class="title">
+								<p class="labels">Event</p>
+							</div>
+							<div class="location">
+								<p class="labels">Location</p>
+							</div>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>10:00 am</p>
+							</div>
+							<div class="end">
+								<p>12:30 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">Remove materials from storage and set up</p>
+							</div>
+							<div class="location">
+								<p>Steps of Bart Luedeke Center</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>Set up the Cavalla Room, Political Desk, EMS, Boys State Office, and Boys State Store.</p>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>12:00 pm</p>
+							</div>
+							<div class="end">
+								<p>12:30 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">Lunch</p>
+							</div>
+							<div class="location">
+								<p>Alumni Gymnasium</p>
+							</div>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>12:30 pm</p>
+							</div>
+							<div class="end">
+								<p>2:15 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">2013 ALJBS Staff meeting</p>
+							</div>
+							<div class="location">
+								<p>BLC Fireside Lounge (Room 245)</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>Welcome and opening remarks from Director Bagatelle. Assignment of cities, distribution of guide-ons, staff shirts, keys, and inventory sheets. Introduction.</p>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>2:15 pm</p>
+							</div>
+							<div class="end">
+								<p>3:30 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">Non-city staff: set up for registration</p>
+							</div>
+							<div class="location">
+								<p>Cavalla Room</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>Set up office, EMS, Political Desk, and Boys State Store. Under the direction of Assistant Director Gordon Vreeland, get the campus ready for registration.</p>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>2:15 pm</p>
+							</div>
+							<div class="end">
+								<p>3:30 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">City Staff Meeting</p>
+							</div>
+							<div class="location">
+								<p>BLC Fireside Lounge </p>
+							</div>
+						</div>
+						<div class="details">
+							<p>Opening remarks (David Bagatelle), Insurance (David Bagatelle), Introductions and initial thoughts (Dominic Santillo, Rich Kane), additions and changes to the program (Dominic, Bib), sports information (Shana Mata, Andy Robertson), basic first aid and EMS (Rich Kane, Dan Fletcher), technology (Brian Epstein), and instructions from the Political Desk (John Migaleddi).</p>
+						</div>
+					</div>			
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>3:30 pm</p>
+							</div>
+							<div class="end">
+								<p>4:30 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">City Staff: Break-out training sessions</p>
+							</div>
+							<div class="location">
+								<p>Sweigart Hall</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>Review the code of conduct, technology, and staff-level training.</p>
+							<p>Senior City Counselors: Room 119 (Andy Robertson)<br />
+							Assistant City Counselors:	Room 117 (Rich Kane, Justin Gianndrea, and Brian Epstein)<br />
+							Junior Counselors:	Room 118 (Shane Mata and Morgan Jolley)<br />
+							USMC:	Room 115 (Chuck Smith)</p>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>4:30 pm</p>
+							</div>
+							<div class="end">
+								<p>5:25 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">City Staff: Set up cities</p>
+							</div>
+							<div class="location">
+								<p>City locations</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>Unpack your belongings, inventory the city, and begin to set it up.</p>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>5:30 pm</p>
+							</div>
+							<div class="end">
+								<p>&nbsp;</p>
+							</div>
+							<div class="title">
+								<p class="strong">Dinner</p>
+							</div>
+							<div class="location">
+								<p>Alumni Gymnasium</p>
+							</div>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>6:30 pm</p>
+							</div>
+							<div class="end">
+								<p>8:00 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">City Staff: Pick up boxes at Boys State Office</p>
+							</div>
+							<div class="location">
+								<p>City Locations</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>Continue setting up your city, making packets for delegates, and prepare for registration. Make sure your box has everything, including starter forms from the Political desk (ballots, oath of office, EBO sheet, summons, etc.)</p>
+						</div>
+					</div>
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>7:00 pm</p>
+							</div>
+							<div class="end">
+								<p>11:00 pm</p>
+							</div>
+							<div class="title">
+								<p class="strong">68th Anniversary Staff Party</p>
+							</div>
+							<div class="location">
+								<p>Daly Dining Hall, Mercer Room</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>A fine and plentiful selection of hot and cold appetizers will be served. Soft drinks and adult beverages (only for staff members 21 or over with ID) will also be available.</p>
+						</div>
+					</div>
+				</div>
+				<div class="back">
+					<p><a href="#top">Back to top&nbsp;&nbsp;&#8593;</a></p>
+				</div>
+
+			</div>
+
+			
+			
+<!-- Sample text for copy/paste
+
+		New event
+					<div class="event">
+						<div class="topline">
+							<div class="start">
+								<p>S</p>
+							</div>
+							<div class="end">
+								<p>E</p>
+							</div>
+							<div class="title">
+								<p class="strong">T</p>
+							</div>
+							<div class="location">
+								<p>L</p>
+							</div>
+						</div>
+						<div class="details">
+							<p>D</p>
+						</div>
+					</div>
+
+		Back to top
+
+				<div class="back">
+					<p><a href="#top">Back to top&nbsp;&nbsp;&#8593;</a></p>
+				</div>
+
+		New day header
+
+				<div class="day">
+				<h3 id="sunday">Sunday, June 16th</h3>
+					<div class="deadlines">
+						<p class="labels">Deadlines and Submissions</p>
+						<p>12:00 pm: 	EBOs, Guide-on bearer, Newspaper editor, and City Photographer should be elected<br />
+						4:00 pm: 	Computers should be set up. You need to submit and print a lot of things; call if you have problems.<br />
+						5:15 pm: 	Election results submitted (City Administrators, Type of City Government)<br />
+						7:30 pm: 	Printed labels (in alphabetical order) are due to the Boys State Office<br />
+						10:00 pm: 	City Party Petition results submitted, Ballots for City Party Candidate elections printed out<br />
+						11:15 pm: 	Election results submitted (City Party Officials, City Party Candidates)</p>
+					</div>
+
+
+-->
+
+
+
+			<!-- Current date and time for the leftmost column -->
+			<div id="datecol">
+				<p class="datetime">
+					<script type="text/javascript">
+					<!--
+					var currentTime = new Date()
+					var month = currentTime.getMonth() + 1
+					var day = currentTime.getDate()
+					var year = currentTime.getFullYear()
+					if(month = 1){
+					document.write("January ")
+					} else if(month=2){
+					document.write("February ")
+					} else if(month=3){
+					document.write("March ")
+					} else if(month=4) {
+					document.write("April ")
+					} else if(month=5) {
+					document.write("May ")
+					} else if(month=6) {
+					document.write("June ")
+					} else if(month=7) {
+					document.write("July ")
+					} else if(month=8) {
+					document.write("August ")
+					} else if(month=9) {
+					document.write("September ")
+					} else if(month=10) {
+					document.write("October ")
+					} else if(month=11) {
+					document.write("November ")
+					} else {
+					document.write("December ")
+					}
+					document.write(day + ", " + year)
+					//-->
+					</script>
+				</p>
+				<p class="datetime">
+					<script type="text/javascript">
+					<!--
+					var currentTime = new Date()
+					var hours = currentTime.getHours()
+					var minutes = currentTime.getMinutes()
+					if (minutes < 10){
+					minutes = "0" + minutes
+					}
+					if (hours > 11) {
+					hours = hours - 12
+					document.write (hours + ":" + minutes + " pm")
+					} else {
+					document.write(hours + ":" + minutes + "  am")
+					}
+					//-->
+					</script>			
+				</p>
+			</div>
+
+		</div>
+	</body>	
+</html>
