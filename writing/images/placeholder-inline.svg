@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f3ede2"/>
+  <rect x="0.5" y="0.5" width="1199" height="799" fill="none" stroke="#c9bca4" stroke-width="1"/>
+  <text x="600" y="390" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#a89d8c" letter-spacing="2">READING-WIDTH IMAGE</text>
+  <text x="600" y="430" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="16" fill="#a89d8c">replace with a figure.piece-image image (1200×800 shown)</text>
+</svg>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<title>Writing section preview</title>
+<style>
+@charset "UTF-8";
+
+:root {
+  --paper: #fbf7f1;
+  --paper-edge: #f3ede2;
+  --ink: #23201c;
+  --ink-muted: #756c60;
+  --ink-faint: #a89d8c;
+  --rule: #e2d8c6;
+  --rule-strong: #c9bca4;
+  --accent: #085dad;
+  --accent-soft: rgba(8, 93, 173, 0.38);
+  --serif: Charter, "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
+  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --measure: 68ch;
+  --measure-narrow: 34ch;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 1.125rem;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.preview-banner {
+  background: #23201c;
+  color: #f3ede2;
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.6em 1em;
+}
+
+.site-header {
+  text-align: center;
+  padding: 2.5rem 1.25rem 0;
+}
+
+.site-header nav {
+  display: inline-flex;
+  gap: 1.5em;
+}
+
+.home-link {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--ink-faint);
+  text-decoration: none;
+}
+
+.home-link:hover, .home-link:focus { color: var(--accent); }
+
+.piece-header {
+  max-width: var(--measure);
+  margin: 3rem auto 0;
+  padding: 0 1.25rem;
+  text-align: center;
+}
+
+.piece-kicker {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  margin: 0 0 0.9em;
+}
+
+.piece-title {
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  font-weight: 700;
+  margin: 0 0 0.5em;
+}
+
+.piece-byline {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  margin: 0 0 1.5em;
+}
+
+.piece-header hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+  width: 4em;
+  margin: 0 auto;
+}
+
+.piece-body {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.75rem 1.25rem 5rem;
+}
+
+.piece-body > p, .piece-body > ul, .piece-body > ol {
+  margin: 0 0 1.6em;
+  line-height: 1.75;
+}
+
+.piece-body h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin: 2.2em 0 0.8em;
+}
+
+.piece-body a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-soft);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: text-decoration-color 0.15s ease, color 0.15s ease;
+}
+
+.piece-body a:hover, .piece-body a:focus {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+.section-break {
+  text-align: center;
+  margin: 3em auto;
+  color: var(--rule-strong);
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.6em;
+  text-indent: 0.6em;
+}
+
+blockquote.pull-quote {
+  max-width: var(--measure-narrow);
+  margin: 2.75em auto;
+  padding: 1em 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+.piece-body blockquote:not(.pull-quote) {
+  margin: 1.6em 0;
+  padding-left: 1.1em;
+  border-left: 2px solid var(--rule-strong);
+  font-style: italic;
+  color: var(--ink-muted);
+}
+
+.piece-body figure { margin: 2.75em 0; }
+.piece-body figure img { display: block; width: 100%; height: auto; }
+
+.piece-body figcaption {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--ink-faint);
+  text-align: center;
+  margin-top: 0.75em;
+  line-height: 1.5;
+}
+
+.piece-body figure.full-bleed {
+  width: 100vw;
+  max-width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.piece-body figure.full-bleed img { max-height: 85vh; object-fit: cover; }
+
+.piece-body figure.full-bleed figcaption {
+  max-width: var(--measure);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.25rem;
+}
+
+.piece-footer {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem 1.25rem 4rem;
+  border-top: 1px solid var(--rule);
+  text-align: center;
+}
+
+.piece-footer a {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--ink-faint);
+  text-decoration: none;
+}
+
+.piece-footer a:hover { color: var(--accent); }
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.85em;
+  background: var(--paper-edge);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+@media (max-width: 560px) {
+  body { font-size: 1.05rem; }
+  .piece-body figure.full-bleed img { max-height: 60vh; }
+  blockquote.pull-quote { font-size: 1.2rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="preview-banner">Preview only &mdash; the real files are saved in /writing/ on your site</div>
+
+<header class="site-header">
+  <nav>
+    <a class="home-link" href="#">The Dailies</a>
+    <a class="home-link" href="#">Library</a>
+  </nav>
+</header>
+
+<article class="piece">
+
+  <header class="piece-header">
+    <p class="piece-kicker">Category</p>
+    <h1 class="piece-title">Formatting Reference</h1>
+    <p class="piece-byline">Ty Clark</p>
+    <hr>
+  </header>
+
+  <div class="piece-body">
+
+    <p>This is the reading column: the width every paragraph sits inside. It&rsquo;s deliberately narrow &mdash; about 68 characters per line &mdash; because a shorter measure is easier to track from one line to the next, especially at the generous line height used here.</p>
+
+    <p>Paragraphs get real space between them instead of touching margins, and there&rsquo;s no first-line indent &mdash; this is a screen-reading convention, not a printed-book one. A <a href="#">link looks like this</a>: underlined in a muted tone so it doesn&rsquo;t compete with the text, and it turns to full color on hover. Every link should carry <code>target="_blank" rel="noopener"</code> so it opens in a new tab.</p>
+
+    <h2>A subheading looks like this</h2>
+
+    <p>Use an <code>&lt;h2&gt;</code> inside <code>.piece-body</code> to divide a long piece into named sections. For an unnamed beat or scene shift, use a section break instead:</p>
+
+    <p class="section-break" aria-hidden="true">* * *</p>
+
+    <p>That&rsquo;s three characters, centered and letter-spaced, in a markup line that looks like this:</p>
+
+    <p><code>&lt;p class="section-break" aria-hidden="true"&gt;* * *&lt;/p&gt;</code></p>
+
+    <p>Pull quotes are for a single line worth setting apart &mdash; pulled out, centered, larger, and ruled off from the paragraphs around it:</p>
+
+    <blockquote class="pull-quote">A line worth reading twice belongs here, not buried in a paragraph.</blockquote>
+
+    <p>The markup for that is a <code>blockquote</code> with class <code>pull-quote</code>, placed on its own between paragraphs.</p>
+
+    <figure class="piece-image">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMjAwIiBoZWlnaHQ9IjgwMCIgdmlld0JveD0iMCAwIDEyMDAgODAwIj4KICA8cmVjdCB3aWR0aD0iMTIwMCIgaGVpZ2h0PSI4MDAiIGZpbGw9IiNmM2VkZTIiLz4KICA8cmVjdCB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjExOTkiIGhlaWdodD0iNzk5IiBmaWxsPSJub25lIiBzdHJva2U9IiNjOWJjYTQiIHN0cm9rZS13aWR0aD0iMSIvPgogIDx0ZXh0IHg9IjYwMCIgeT0iMzkwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLCBBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyOCIgZmlsbD0iI2E4OWQ4YyIgbGV0dGVyLXNwYWNpbmc9IjIiPlJFQURJTkctV0lEVEggSU1BR0U8L3RleHQ+CiAgPHRleHQgeD0iNjAwIiB5PSI0MzAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2EsIEFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjE2IiBmaWxsPSIjYTg5ZDhjIj5yZXBsYWNlIHdpdGggYSBmaWd1cmUucGllY2UtaW1hZ2UgaW1hZ2UgKDEyMDB4ODAwIHNob3duKTwvdGV4dD4KPC9zdmc+" alt="Placeholder image sized to the reading column">
+      <figcaption>An image with no extra class stays inside the reading column, like this one.</figcaption>
+    </figure>
+
+    <p>For an image that should breathe, add <code>full-bleed</code> to the figure and it spans the full width of the browser window:</p>
+
+    <figure class="piece-image full-bleed">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNDAwIiBoZWlnaHQ9IjEwMDAiIHZpZXdCb3g9IjAgMCAyNDAwIDEwMDAiPgogIDxyZWN0IHdpZHRoPSIyNDAwIiBoZWlnaHQ9IjEwMDAiIGZpbGw9IiNlY2UzZDIiLz4KICA8cmVjdCB4PSIwLjUiIHk9IjAuNSIgd2lkdGg9IjIzOTkiIGhlaWdodD0iOTk5IiBmaWxsPSJub25lIiBzdHJva2U9IiNjOWJjYTQiIHN0cm9rZS13aWR0aD0iMSIvPgogIDx0ZXh0IHg9IjEyMDAiIHk9IjQ4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iNDAiIGZpbGw9IiM4YTdkNjgiIGxldHRlci1zcGFjaW5nPSIzIj5GVUxMLVdJRFRIIElNQUdFPC90ZXh0PgogIDx0ZXh0IHg9IjEyMDAiIHk9IjUzNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkhlbHZldGljYSwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjIiIGZpbGw9IiM4YTdkNjgiPnJlcGxhY2Ugd2l0aCBhIGZpZ3VyZS5waWVjZS1pbWFnZS5mdWxsLWJsZWVkIGltYWdlICgyNDAweDEwMDAgc2hvd24pPC90ZXh0Pgo8L3N2Zz4=" alt="Placeholder image spanning the full page width">
+      <figcaption>A full-bleed figure breaks out to the edges of the viewport; its caption stays aligned to the reading column.</figcaption>
+    </figure>
+
+    <p>An ordinary inline quotation uses a plain <code>blockquote</code> with no class:</p>
+
+    <blockquote>Quoted material that&rsquo;s part of the argument, not a highlight of it.</blockquote>
+
+    <p>That covers every element in the system: paragraphs, subheadings, section breaks, pull quotes, inline quotes, reading-width images, and full-bleed images, plus link styling.</p>
+
+  </div>
+
+</article>
+
+<footer class="piece-footer">
+  <a href="#">&larr; Back to the Library</a>
+</footer>
+
+</body>
+</html>

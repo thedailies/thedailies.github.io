@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="../static/favicon/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<title>Template — Writing</title>
+</head>
+<body>
+
+<!--
+  TEMPLATE — not a published piece, not linked from the library.
+  Duplicate this file to start a new one: copy it, rename it to match
+  the new title (e.g. my-new-essay.html), update the <title>, kicker,
+  heading and byline below, delete this comment block and the demo
+  content, and write. Then add a line for it on index.html.
+-->
+
+<header class="site-header">
+  <nav>
+    <a class="home-link" href="../index.html">The Dailies</a>
+    <a class="home-link" href="index.html">Library</a>
+  </nav>
+</header>
+
+<article class="piece">
+
+  <header class="piece-header">
+    <p class="piece-kicker">Category</p>
+    <h1 class="piece-title">Formatting Reference</h1>
+    <p class="piece-byline">Ty Clark</p>
+    <hr>
+  </header>
+
+  <div class="piece-body">
+
+    <p>This is the reading column: the width every paragraph sits inside. It&rsquo;s deliberately narrow — about 68 characters per line — because a shorter measure is easier to track from one line to the next, especially at the generous line height used here.</p>
+
+    <p>Paragraphs get real space between them instead of touching margins, and there&rsquo;s no first-line indent — this is a screen-reading convention, not a printed-book one. A <a href="https://en.wikipedia.org/wiki/Longform" target="_blank" rel="noopener">link looks like this</a>: underlined in a muted tone so it doesn&rsquo;t compete with the text, and it turns to full color on hover. Every link should carry <code>target="_blank" rel="noopener"</code> so it opens in a new tab.</p>
+
+    <h2>A subheading looks like this</h2>
+
+    <p>Use an <code>&lt;h2&gt;</code> inside <code>.piece-body</code> to divide a long piece into named sections. For an unnamed beat or scene shift, use a section break instead:</p>
+
+    <p class="section-break" aria-hidden="true">* * *</p>
+
+    <p>That&rsquo;s three characters, centered and letter-spaced, in a markup line that looks like this:</p>
+
+    <p><code>&lt;p class="section-break" aria-hidden="true"&gt;* * *&lt;/p&gt;</code></p>
+
+    <p>Pull quotes are for a single line worth setting apart — pulled out, centered, larger, and ruled off from the paragraphs around it:</p>
+
+    <blockquote class="pull-quote">A line worth reading twice belongs here, not buried in a paragraph.</blockquote>
+
+    <p>The markup for that is a <code>blockquote</code> with class <code>pull-quote</code>, placed on its own between paragraphs — no need to also quote it in the body text above.</p>
+
+    <figure class="piece-image">
+      <img src="images/placeholder-inline.svg" alt="Placeholder image sized to the reading column">
+      <figcaption>An image with no extra class stays inside the reading column, like this one. Caption text goes in a <code>figcaption</code>.</figcaption>
+    </figure>
+
+    <p>For an image that should breathe — a landscape, a group shot, anything that wants room — add <code>full-bleed</code> to the figure and it spans the full width of the browser window, ignoring the reading column on either side:</p>
+
+    <figure class="piece-image full-bleed">
+      <img src="images/placeholder-full.svg" alt="Placeholder image spanning the full page width">
+      <figcaption>A <code>full-bleed</code> figure breaks out to the edges of the viewport; its caption stays aligned to the reading column.</figcaption>
+    </figure>
+
+    <p>An ordinary inline quotation — someone else&rsquo;s words, quoted in passing rather than pulled out for emphasis — uses a plain <code>blockquote</code> with no class:</p>
+
+    <blockquote>Quoted material that&rsquo;s part of the argument, not a highlight of it.</blockquote>
+
+    <p>That covers every element currently in the system: paragraphs, subheadings, section breaks, pull quotes, inline quotes, reading-width images, and full-bleed images, plus link styling. Delete everything above this line in the body when starting a real piece, keeping only the structure you need.</p>
+
+  </div>
+
+</article>
+
+<footer class="piece-footer">
+  <a href="index.html">&larr; Back to the Library</a>
+</footer>
+
+</body>
+</html>

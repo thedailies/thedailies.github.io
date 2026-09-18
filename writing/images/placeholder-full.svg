@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1000" viewBox="0 0 2400 1000">
+  <rect width="2400" height="1000" fill="#ece3d2"/>
+  <rect x="0.5" y="0.5" width="2399" height="999" fill="none" stroke="#c9bca4" stroke-width="1"/>
+  <text x="1200" y="480" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="40" fill="#8a7d68" letter-spacing="3">FULL-WIDTH IMAGE</text>
+  <text x="1200" y="535" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#8a7d68">replace with a figure.piece-image.full-bleed image (2400×1000 shown)</text>
+</svg>
